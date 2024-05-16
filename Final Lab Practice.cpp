@@ -1,6 +1,14 @@
-#include <iostream>
-#include <array>
-using namespace std;
+// #include <iostream>
+// #include <array>
+// #include <string>
+// using namespace std;
+
+
+// struct stud{
+//     string name;
+//     int rollNo;
+//     array<int, 4> marks;
+// };
 
 // int linearSearch(int arr[], int key, int index, int size) {
 //     if (index >= size) {
@@ -60,5 +68,52 @@ int main() {
     // } else {
     //     cout << "Element not found";
     // }
+    
+    // stud student1;
+    // cout << "Name: " << student1.name;
+    // cout << "\nRoll No.: " << student1.rollNo;
+    // for(int i =0; i < sizeof(student1.marks) / 4; i++)
+    // {
+    //     cout << "\nMarks of " << i + 1 << " subject: " << student1.marks[i];
+    // }
+    
+    // array<stud, 3> students;
+        
+    // for(int i = 0; i < students.size(); i++) {
+    //     cout<<"Enter the name of the student no."<<i+1<<": ";
+    //     getline(cin, students[i].name);
+    // } 
+    
+    // for(int i = 0; i < students.size(); i++) {
+    //     cout<<"Enter the roll no. of the student no."<<i+1<<": ";
+    //     cin >> students[i].rollNo;
+    // } 
+    
+    // cout<<"\n\nData";
+    // for(int i = 0; i < students.size(); i++)
+    // {
+    //     cout<<"\t\tEmployee " << i + 1;
+    // }
+    
+    // cout << "\nName.";
+    // for(int i = 0; i < students.size(); i++)
+    // {
+    //     cout<<"\t\t"<<students[i].name;
+    // }
+    
+    // cout << "\nRoll No.";
+    // for(int i = 0; i < students.size(); i++)
+    // {
+    //     cout<<"\t\t"<<students[i].rollNo;
+    // }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }
