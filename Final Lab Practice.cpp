@@ -1,7 +1,7 @@
-// #include <iostream>
-// #include <array>
-// #include <string>
-// using namespace std;
+#include <iostream>
+#include <array>
+#include <string>
+using namespace std;
 
 
 // struct stud{
@@ -33,6 +33,32 @@
     
 //     return linearSearch2(arr, key, index + 1, size);
 // }
+
+int binarySearch(int arr[], int key, int low, int high) {
+    // Base case: If low is greater than high, the key is not found
+    if (low > high) {
+        return -1;
+    }
+    
+    // Calculate mid index
+    int mid = low + (high - low) / 2;
+    
+    // If the middle element is the key, return its index
+    if (arr[mid] == key) {
+        return mid;
+    }
+    
+    // If the key is less than the middle element, search the left subarray
+    else if (key < arr[mid]) {
+        return binarySearch(arr, key, low, mid - 1);
+    }
+    
+    // If the key is greater than the middle element, search the right subarray
+    else {
+        return binarySearch(arr, key, mid + 1, high);
+    }
+}
+
 
 int main() {
     // passing array using builtIn method
@@ -108,7 +134,18 @@ int main() {
     // }
     
     
+    int arr[] = { 10, 20, 30, 40, 50 };
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int key = 40;
     
+    // Perform binary search
+    int index = binarySearch(arr, key, 0, size - 1);
+    
+    if (index != -1) {
+        cout << "Element found at index: " << index << endl;
+    } else {
+        cout << "Element not found in the array" << endl;
+    }
     
     
     
